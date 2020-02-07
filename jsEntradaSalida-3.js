@@ -2,7 +2,12 @@
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	ID()
-}
+	var nombre;
 
+	nombre=document.getElementById('elNombre').value;
+
+	alert(nombre)
+	document.getElementById('elNombre').value="el nombre va aqui";
+}
+	
 
