@@ -27,7 +27,7 @@ function CalcularPrecio ()
  	marca=document.getElementById('Marca').value;
 
  	descuento=0;
- 	
+
  	if (cantidadLamparitas>5) 
  	{
  		descuento=50;
@@ -40,7 +40,7 @@ function CalcularPrecio ()
  			if (marca=="ArgentinaLuz")
  			{
  				descuento=40;
- 				
+
  			}
  			else
  			{
@@ -86,4 +86,13 @@ function CalcularPrecio ()
 
  	precioDescuento=precioBruto-precioBruto*descuento/100;
  	document.getElementById('precioDescuento').value=precioDescuento;
+
+ 	if (precioDescuento>120) 
+ 	{
+ 		precioDescuento=(precioDescuento+(precioBruto*10/100));
+ 		precioDescuento=parseInt(precioDescuento);
+
+ 		alert("usted pago"+precioBruto*10/100+"de ingreso bruto.");
+ 	}
+
 }
