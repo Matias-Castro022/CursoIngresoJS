@@ -13,19 +13,22 @@ function mostrar()
 		numeroIngresado=prompt("ingrese número");
 		numeroIngresado=parseInt(numeroIngresado);
 		while(isNaN(numeroIngresado));
+		{
+			numeroIngresado=prompt("número invalido");
+			numeroIngresado=parseInt(numeroIngresado);
+		
+			if (numeroIngresado>0)
 			{
-				if (numeroIngresado>0)
-				{
 					positivo=positivo+numeroIngresado;
-				}
-				else
+			}
+			else
+			{
+				if (numeroIngresado<0)
 				{
-					if (numeroIngresado<0)
-					{
-						negativo=negativo*numeroIngresado;
-					}
+					negativo=negativo*numeroIngresado;
 				}
 			}
+		}	
 
 		respuesta=prompt("ingrese si para continuar");
 	}
