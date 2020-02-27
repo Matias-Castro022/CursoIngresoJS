@@ -2,11 +2,11 @@ function mostrar()
 {
 	var contador;
 
-	contador=0;
+	contador=10;
 
-	while (contador<10)
+	while (contador>0)
 	{
-		contador=contador+1;
+		contador=contador-1;
 		console.log(contador);
 	}
 	//alert('iteración while');
